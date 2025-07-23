@@ -1,1 +1,25 @@
-body{margin:0;padding:0;width:100vw;height:100vh;background-image:url('./assets/img/bg.webp');background-size:cover;background-position:center;background-repeat:no-repeat}.wrapper{min-height:100%;width:100%;overflow:hidden;display:flex;flex-direction:column}.main{flex-grow:1}.container{max-width:1000px}
+body {
+    margin: 0;
+    padding: 0;
+}
+.top__wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./assets/img/bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex-grow: 1;
+}
+.container {
+    max-width: 1000px;
+}
