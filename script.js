@@ -1,9 +1,14 @@
 window.addEventListener("load", () => {
     const preloader = document.querySelector(".preloader");
     if (preloader) {
-        preloader.classList.add("hidden");
+        // Добавляем класс не сразу, а на следующий кадр, чтобы сработал transition
+        requestAnimationFrame(() => {
+            preloader.classList.add("hidden");
+        });
 
-        // Полное удаление из DOM после анимации (опционально)
-        setTimeout(() => preloader.remove(), 700);
+        // Удаляем из DOM чуть позже — после окончания transition
+        setTimeout(() => {
+            preloader.remove();
+        }, 1000); // с запасом
     }
 });
